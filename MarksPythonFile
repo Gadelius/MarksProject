@@ -1,0 +1,42 @@
+def marks():
+
+    from RealRound import real_round
+
+    answer = ''
+    while answer != 'н' and answer != 'д':
+        answer = input('Вы помните свой текущий балл и количество оценок? (д/н)'
+                       ' Ответ: ')
+        if answer != 'н' and answer != 'д':
+            print('Неверный формат ввода:', answer)
+
+    if answer == 'н':
+        numbers = list(map(int, input('Ваши оценки: ').split()))
+        given_mark = real_round(sum(numbers) / len(numbers))
+        marks_number = len(numbers)
+        total_sum = sum(numbers)
+
+    else:
+        given_mark = float(input('Ваш балл: '))
+        marks_number = int(input('Количество оценок: '))
+        total_sum = marks_number * given_mark
+
+    goal = int(input('Оценка, которую вы хотите в итоге: '))
+    reaching_mark = int(input('Оценка, которой вы хотите достигнуть: '))
+    extra_marks_number = 0
+    in_fun_mark = real_round(given_mark)
+
+    if (given_mark < goal and reaching_mark < given_mark) or \
+            (given_mark > goal and reaching_mark > given_mark) or \
+            (given_mark < goal and reaching_mark < goal) or \
+            (given_mark > goal and reaching_mark > goal):
+        print('Это невозможно')
+        return 0
+
+    else:
+        while in_fun_mark != goal:
+            extra_marks_number += 1
+            total_sum += reaching_mark
+            in_fun_mark = real_round(total_sum / (extra_marks_number + marks_number))
+        print('Для достижения "' + str(goal) + '" вам нужно ' + str(extra_marks_number)
+              + ' оценок "' + str(reaching_mark) + '"')
+        return 0
