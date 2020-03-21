@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        
+        <title>About Marks Project</title>
+        
+        <link href="AboutMarksCSS.css" rel="stylesheet" type="text/css">
+    
+    </head>
+
+    <body>
+        
+        <ul>
+            
+            <li class="return"><a href="Marks.html">Return</a></li>
+            
+        </ul>
+        
+        <div class="container">
+            
+            <h1>About</h1>
+            
+            <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet orci hendrerit magna volutpat mattis. Donec feugiat metus sit amet congue malesuada. Nulla fermentum purus ac enim pretium, sed sollicitudin arcu facilisis. Sed quis elementum urna. Vestibulum finibus aliquet sem, non semper ante posuere a. Vivamus sit amet porta massa, non elementum nulla. Ut ac scelerisque sem, sit amet molestie sem. Nunc aliquam, dui in efficitur vehicula, sem velit volutpat urna, ut feugiat elit nisl id massa. Vestibulum hendrerit sapien vitae auctor egestas. Phasellus id ultricies quam, vitae bibendum augue. Maecenas eget metus venenatis, malesuada eros quis, suscipit sem. Nam pulvinar arcu magna. Pellentesque erat turpis, vulputate ac mauris a, congue cursus tellus. Quisque consectetur sed sapien vel sodales. Nunc eu arcu ut sem consequat fermentum.</div>
+            
+            <address>&copy; Имамов Гадель</address>
+        
+        </div>
+    
+    
+    </body>
+
+
+
+</html>
