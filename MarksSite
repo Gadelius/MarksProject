@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        <title>Marks</title>
+        <link rel="stylesheet" type="text/css" href="Marks.css"/>
+        <script src="Marks.js"></script>
+    </head>
+    
+    <body>
+        
+        <div class="nav">
+            <ul>
+                <li id="about"><a href="AboutMarks.html">About</a></li>
+            </ul>
+            
+            <ul>
+                <li id="contacts"><a href="apricot.jpg">Contacts</a></li>
+            </ul>
+        </div>
+        
+        <div class="main">
+            <h1>Marks</h1>
+        </div>
+        
+        <div class="playground">
+            <div class="TheMarks"><p>The Marks</p></div>
+            <div class="TheWantedMark"><p>The Wanted Mark</p></div>
+            <div class="InputOfMarks"><p>___________</p></div>
+            <div class="InputOfWantedMark"><p>___________</p></div>
+            <div class="Submit"><p id="submit">Submit</p></div>
+        </div>
+        
+        <div class="wrap"><h2 class="gradient-text">&copy; Имамов Гадель</h2></div>
+                
+    </body>
+    
+</html>
